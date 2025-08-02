@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎉 Happy Birthday! 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      overflow: hidden;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding-top: 150px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ff4d4d;
+    }
+
+    p {
+      font-size: 20px;
+      color: #cccccc;
+      margin-top: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      animation: fall 3s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-10vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎂 HAPPY BIRTHDAY ANTIC ATMA👻! 🎂</h1>
+  <p>Thank you so much for existing and being the chaos in my calm😚😚💗.You're not just my friend uhh myy therapist(jhuth hai),myy comedian(joker🤡)🤭🤭.I don't have the fanciest words,but i just want you to know how grateful i am for you🫶🏻💕.May Allah bless you with UNLIMITED PEACE,HAPPINESS OVERLOADED AND FRIENDS LIKE ME(okay just me!)😌😌♥
+    May your year be full of bak-bak, blessings, and all the love in the duniya and aakhirah.Once Again HAPPY BIRTHDAY CHUDHAIL🥳🎉🎁<br>
+    — From your HEADACHE 💖
+  </p>
+
+  <script>
+    // Create confetti elements
+    const colors = ["#ff4d4d", "#4dff4d", "#4d4dff", "#ffff4d", "#ff4dff"];
+    for (let i = 0; i < 150; i++) {
+      const confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.top = Math.random() * -100 + "vh";
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.animationDuration = (2 + Math.random() * 3) + "s";
+      confetti.style.width = confetti.style.height = (6 + Math.random() * 6) + "px";
+      document.body.appendChild(confetti);
+    }
+  </script>
+
+</body>
+</html>
